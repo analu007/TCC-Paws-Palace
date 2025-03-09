@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link fontes e icones-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- link swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="agendamentoCSS.css">
+    <link rel="icon" href="https://i.postimg.cc/wT3nfxgv/Logo.png" type="image/x-icon">
+    <title> Agendamento Paws Palace</title>
+
+
+</head>
+
+<header>
+    <div class="logobox">
+        <img src="https://i.postimg.cc/6pmnt94V/Logo.png" alt="logo" class="logo" onclick="window.open('index.php', '_self')">
+    </div>
+
+
+    <div class="acesso" id="acesso">
+        <button class="btnclube" onclick="window.open('clube.html', '_self')"> <img src="https://i.postimg.cc/RCtv2NBj/asspaws.png" alt="btnclube" class="imgclube">
+        </button>
+
+        <button class="btnagendamento" onclick="location.reload();"> <img src="https://i.postimg.cc/fThMsDWk/banhotosa.png" alt="btnagendamento"
+                class="imgagendamento"> </button>
+
+        <button class="btnperfil" id="btnperfil" onclick="window.open('btn.php', '_self')"> <img
+                src="https://i.postimg.cc/gjm6Nj1p/perfil.png" alt="perfil" class="imgperfil"> </button>
+    </div>
+</header>
+
+
+<body>
+        <div class="bodybox">
+           
+        <!--cadastro do pet-->
+        <div class="box1">
+            <form enctype="multipart/form-data" method="post" action="agd.php">
+            <div class="petbox">
+    
+                <div class="imgpetbox" id="imgpetbox">
+    
+                    <img src="https://i.postimg.cc/nhg2TK2t/btncachorros.png" class="imgpet" alt="imgpet" height="100px"
+                        width="100px">
+    
+                </div>
+    
+                <div class="inputbox">
+                    <label for="nomepet"><b>Nome do Pet </b></label>
+                    <input type="text" name="nomepet" id="nomepet" class="input">
+                </div>
+    
+            </div>
+    
+            <input type="file" name="arq" accept="image/*" id="inputfile">
+            <div id="altimgpet" class="btnimgpet"> Alterar imagem</div>
+    
+    
+    
+            <div class="formbox2">
+    
+    
+                <div class="inputbox">
+                    <label for="racapet"> <b> Raça </b> </label>
+                    <input type="text" name="racapet" id="racapet" class="input">
+                </div>
+    
+                <div class="inputbox">
+                    <label for="idadepet"> <b>Idade</b> </label>
+                    <input type="text" name="idadepet" id="idadepet" class="input">
+                </div>
+    
+    
+    
+                <div class="inputbox">
+                    <label for="persopet"> <b>Porte do Pet</b> </label>
+                    <input type="text" name="prtpet" id="persopet" class="input">
+                </div>
+    
+                <div class="inputbox">
+                    <label for="obspet"> <b>Observações</b> </label>
+                    <textarea name="obspet" id="obspet" class="input"></textarea>
+                </div>
+    
+    
+            </div>
+    
+        </div>
+    
+        <!--cadastro do responsável-->
+        <div class="box2">
+            <div class="inputbox">
+                <label for="nomeresp"> <b>Nome do responsável</b> </label>
+                <input type="text" name="nomeresp" id="nomeresp" class="input">
+            </div>
+    
+            <div class="inputbox">
+                <label for="cpfresp"> <b>CPF</b> </label>
+                <input type="text" name="cpfresp" id="cpfresp" class="input" maxlength="14" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9.-]/g, '')">
+            </div>
+    
+            <div class="inputbox">
+                <label for="endresp"> <b>Endereço</b> </label>
+                <input type="text" name="endresp" id="endresp" class="input">
+            </div>
+    
+            <div class="inputbox">
+                <label for="estilotosa"> <b>Estilo da tosa:</b> </label>
+                <select name="tosa" id="estilotosa" class="input">
+                    <option value="" disabled selected></option>
+                    <option value="tosaraca"> Tosa de raça </option>
+                    <option value="tosahigienica"> Tosa higiênica </option>
+                    <option value="tosatesoura"> Tosa na tesoura </option>
+                    <option value="tosamaquina"> Tosa na máquina </option>
+                    <option value="tosabebe"> Tosa bebê </option>
+                    <option value="tosaverao"> Tosa verão </option>
+                    <option value="semtosa"> Sem tosa </option>
+                </select>
+            </div>
+    
+            <div class="inputbox">
+                <label for="acessorios"> <b>Acessórios</b> </label>
+                <select name="acess" id="acessorios" class="input">
+                    <option value="" disabled selected></option>
+                    <option value="sim"> Sim </option>
+                    <option value="nao"> Não </option>
+                </select>
+            </div>
+    
+            <div class="inputbox">
+                <label for="obsresponsavel"> <b>Especificações</b> </label>
+                <textarea name="obsres" id="obsresponsavel" class="input" placeholder="detalhes sobre tosa, acessórios e mais..."></textarea>
+            </div>
+    
+    
+        </div>
+    
+        <!--cadastro do agendamento-->
+        <div class="box3">
+            <div class="inputbox">
+                <label for="formapag"> <b>Forma de pagamento</b> </label>
+                <select name="fpag" id="formapag" class="input">
+                    <option value="" disabled selected></option>
+                    <option value="pagpix"> Pix </option>
+                    <option value="pagcartao"> Cartão </option>
+                </select>
+            </div>
+    
+            <div class="boxdata">
+                <label for="boxdata" id="labeldata"> Data de Atendimento </label>
+            </div>
+    
+            <div class="boxinputdata">
+    
+                <div class="inputbox">
+                    <input type="date" name="dataagd" id="dataatend" class="input">
+                </div>
+    
+                <img src="https://i.postimg.cc/DwTrH8FP/calendario.png" id="calendario" class="imgcalendario">
+    
+                <div class="inputbox">
+                    <input type="time" name="horaagd" id="horaatend" class="input">
+                </div> 
+    
+            </div>
+    
+            <div class="inputbox">
+                <label for="obsatend"> <b>Observações</b> </label>
+                <textarea name="obsat" id="obsatend" class="input"></textarea>
+            </div>
+    
+            <div class="btnbox">
+                <button class="btnagendar" name="submit" id="btnagendar"> Agendar </button>
+            </div>
+        </form>
+    
+        </div>
+    
+        <script src="agendamentoJS.js"></script>
+    </div>
+    
+    </body>
+    
+    
+ <!--rodapé-->
+ <footer>
+
+        <div class="sobre">
+
+            <b class="titulo" onclick="sobre()" id="sobre"> Sobre nós </b>
+            Quem somos?
+        </div>
+
+        <div class="contato">
+
+            <p><a href="https://etecvilaformosa.cps.sp.gov.br/" target="_blank" id="evf">ETEC de Vila Formosa</a></p>
+            <br>
+            <div class="contatobox">
+                <img src="img/instaicon.png" class="iconimg" alt="instagram logo">
+                <p><a href="https://www.instagram.com/paws.palace_?igsh=c3JwNmYzaGNuOWVu" id="instagram" target="_blank"
+                        rel="noopener noreferrer">@paws.palace_</a></p>
+            </div>
+
+            <br>
+
+            <div class="contatobox">
+                <img src="img/emailicon.png" class="iconimg" alt="email logo">
+                <p><a id="email-link"
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=tccpawspalace@gmail.com&su=Ajuda%20Paws%20Palace&body="
+                        target="_blank">tccpawspalace@gmail.com</a></p>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+    <div class="subfooter" id="subfooter">
+
+        <div class="boxsobre">
+             No Paws Palace, nosso objetivo é oferecer uma experiência prática e personalizada para você e seu pet.
+            Criamos uma plataforma que combina conveniência e eficiência, permitindo agendamentos online, acesso a produtos de
+            alta qualidade e gestão simplificada de serviços. Inspirados por nossa paixão pelos animais e comprometidos com a
+            excelência, buscamos ser mais do que um pet shop, mas um parceiro confiável na jornada de cuidados com seu
+            companheiro. Priorizamos o bem-estar dos pets e a satisfação dos tutores, com uma equipe dedicada e soluções
+            inovadoras para tornar seu dia a dia mais fácil e especial.
+
+            <br><br>
+
+            Precisa de ajuda? Contate-nos <a id="email-link"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=tccpawspalace@gmail.com&su=Ajuda%20Paws%20Palace&body="
+                target="_blank">tccpawspalace@gmail.com</a>
+        </div>
+
+        <div class="locationsobre" id="locationsobre"></div>
+
+    </div>
+
+
+</html>

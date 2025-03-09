@@ -1,0 +1,399 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+}
+
+
+header{
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    
+    width: 100%;
+    height: 100px;
+
+}
+
+.logo{
+    width: 130px;
+    height: auto;
+
+    cursor: pointer;
+}
+
+.pesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: solid #F7BB49;
+    border-radius: 15px;
+    background-color: #F7BB49;
+    border-left-width: 10px;
+    
+
+    width: 50%;
+    min-width: 180px;
+    max-width: 500px;
+}
+
+.input{
+    border: none;
+    height: 30px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    outline: none;
+}
+
+.btnlupa{
+    background: none;
+    border: none;
+
+}
+
+.lupa{
+    height: 25px;
+    width: 25px;
+    padding: 8px;
+
+    cursor: pointer;
+}
+
+.lupa:hover{
+    transform: scale(1.2);
+}
+
+.btnperfil{
+    background: none;
+    border: none;
+    width: auto;
+}
+
+.perfil{
+    width: 80px;
+    height: auto;
+
+    cursor: pointer;
+
+}
+
+.perfil:hover{
+    transform: scale(1.10);
+}
+
+.itensbox{
+    display: flex;
+    width: 100px;
+    height: auto;
+}
+
+.subheader{
+    background-color: #F7BB49;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky; top: 0;
+    z-index: 12;
+}
+
+.subitens2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    width: auto;
+}
+
+.coroa{
+    background: none;
+}
+
+.racao, .brinquedos, .acessorios, .outros, .barra, .assinaturas, .clube, .agendamento{
+    text-decoration: none;
+    background: none;
+    border: none;
+
+    font-size: clamp(15px, 1.05vw, 300px); 
+
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    transition: font-size 0.1s;
+    cursor: pointer;
+}
+
+.racao:hover, .brinquedos:hover, .acessorios:hover, .outros:hover, .clube:hover, .agendamento:hover{
+    transform: scale(1.1);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+    
+    background-image: url('https://i.postimg.cc/L4LTDZYc/background.png');
+    
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    height: 90%;
+    
+    padding: 20px;
+    margin: 100px 0px 100px 0px;
+
+    border-radius: 60px;
+
+    background-color: white;
+}
+
+.content-inside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+
+    border: 3px solid black;
+    border-radius: 50px;
+    background: none;
+}
+
+.box1{
+    width: 100%;
+    height: 70%;
+    flex-direction: column;
+}
+
+.produtoimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 500px;
+    height: auto;
+
+    background: none;
+}
+
+.produtoimg img{
+    width: 40%;
+    height: auto;
+    background-color: white;
+}
+
+.box2{
+    flex-direction: column;
+}
+
+.nomeproduto, .descproduto, .valorproduto, .btnbox{
+    width: 100%;
+    height: 35%;
+    margin-right: 20px;
+}
+
+.nomeproduto{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.descproduto{
+    font-size: 17px;
+}
+
+.valorbox{
+    display: flex;
+    flex-direction: row;
+    height: 15%;
+    width: 100%;
+}
+
+.valorproduto, .freteproduto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: 100%;
+    
+}
+
+.valorproduto{
+    color: #E2AD06;
+    font-size: 40px;
+}
+
+.freteproduto{
+    font-size: 20px;
+}
+
+.frete{
+    color: #dd1b1b;
+}
+
+
+.btnbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnadcproduto{
+    width: 200px;
+    padding: 10px;
+
+    border: none;
+    border-radius: 20px;
+
+    font-size: 15px;
+
+    background-color: #E2AD06;
+
+    cursor: pointer;
+}
+
+.btnadcproduto:hover{
+    transform: scale(1.03);
+}
+
+/*rodapé*/
+footer{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 200px;
+
+    background-color: #5E3811;
+}
+
+.footerbox{
+    display: flex;
+    width: 100%;
+}
+
+.titulo{
+    font-size: 20px;
+    margin-bottom: 5px;
+
+    cursor: pointer;
+
+    color: #E2AD06;
+}
+
+.titulo:hover{
+    transform: scale(1.05);
+}
+
+.sobre, .politicas, .ajuda, .contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 25%;
+
+    color: white;
+    font-size: clamp(20px, 1vw, 50px);
+}
+.contatobox{
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato{
+    align-items: end;
+    padding-right: 5px;
+    font-size: 15px;
+}
+
+.contato p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.iconbox{
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+}
+
+.iconimg{
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+}
+
+@media (max-width: 1350px) {
+    body{
+        width: auto;
+        height: auto;
+    }
+
+    .content{
+        margin-top: 180px;
+        height: auto;
+    }
+
+    .content-inside{
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .logo{
+        top: 10px;
+
+    }
+
+    .produtoimg{
+       width: 100%; 
+    }
+
+    .box2{
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .nomeproduto, .descproduto{
+        margin-bottom: 20px;
+        padding: 0;
+
+        width: 90%;
+        justify-content: center;
+
+    }
+
+    .valorproduto{
+        margin: 30px 0px 30px 0px;
+    }
+
+    .btnadcproduto{
+        margin-bottom: 20px;
+    }
+    
+
+
+
+}

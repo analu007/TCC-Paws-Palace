@@ -1,0 +1,4 @@
+Amarelo principal: #E2AD06
+Amarel secundario: #F7BB49
+Cor creme: #F8EFDE
+Marrom Principal: #5E3811

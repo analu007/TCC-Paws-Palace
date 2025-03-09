@@ -1,0 +1,325 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+    font-family: "Cloud", sans-serif;
+}
+
+@font-face{
+    font-family: 'Cloud' ;
+    src: url('fonts/CloudSoft-Bold\ 700.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Cloud-light' ;
+    src: url('fonts/CloudSoft-Light\ 300.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Arista-normal' ;
+    src: url('fonts/Arista-Pro-Bold-trial.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Arista-light' ;
+    src: url('fonts/Arista-Pro-ExtraLight-trial.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+hr{
+    width: 300px;
+
+    border: 1px solid white;
+    border-radius: 100px;
+
+}
+.content1{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: #5E3811;
+    width: 50vw;
+    height: 100vh;
+
+    color: white;
+
+    font-size: larger;
+}
+
+.logo{
+    position: absolute;
+    width: clamp(10px, 30vw, 200px);
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.txt1, .txt2, .txt3{
+    text-align: center;
+    margin: 20px 0px 20px 5px;
+}
+
+.txt1{
+    font-size: xx-large;
+}
+
+.txt3box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80%;
+
+}
+
+.txt3{
+    position: absolute;
+
+    background-color: #5E3811;
+    padding: 0px 5px 0px 5px;
+}
+
+
+.box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff6e9;
+    width: 50vw;
+    height: 100vh;
+
+    border: none;
+}
+
+.contentbox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    padding: 20px 0px 20px 0px;
+
+    font-size: larger;
+}
+
+.input{
+    border: 2px solid #5E3811;
+    border-radius: 5px;
+    padding-left: 10px;
+
+    width: 100%;
+    height: 30px;
+
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+#senha1, #senha2, #csenha{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#senha2, #senha1, #csenha{
+    border: none;
+}
+
+.senhabox{
+    display: flex;
+    width: 100%;
+
+    border: 2px solid #5E3811;
+    border-radius: 5px;
+}
+
+.inputbox{
+    display: flex;
+    width: 100%;
+}
+
+.content1 .box2 .btnhide, .content1 .box2 .btnhide, .content2 .box3 .btnhide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    width: 30px;
+    background: white;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+
+    padding-right: 5px;
+    cursor: pointer;
+    
+}
+
+form{
+    width: 30vw;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.btncadastrar, .btnfazerlogin, .btncadastrar2, .btnfazerlogin2{
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    height: auto;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: large;
+
+    cursor: pointer;
+}
+
+.btncadastrar{
+    margin-top: 30px;
+    width: 100%;
+
+    background-color: #5E3811;
+    color: white;
+
+}
+
+.btnfazerlogin{
+    width: 450px;
+    min-width: auto;
+
+    background-color: #E2AD06;
+    color: black;
+
+    margin-top: 20px;
+    padding: 10px;
+
+}
+
+.btncadastrar:hover, .btnfazerlogin:hover, .btncadastrar2:hover, .btnfazerlogin2:hover {
+    scale: 1.01;
+}
+
+.content2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logo2{
+    position: absolute;
+    width: clamp(10px, 30vw, 200px);
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.box3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50vw;
+    height: 100vh;
+
+    background-color: #fff6e9;
+
+    border: none;
+}
+
+.box4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: #5E3811;
+    width: 50vw;
+    height: 100vh;
+
+    color: white;
+
+    font-size: larger;
+}
+
+.btnfazerlogin2{
+    margin-top: 30px;
+    width: 100%;
+
+    background-color: #5E3811;
+    color: white;
+}
+
+.btncadastrar2{
+    width: 450px;
+    
+    margin-top: 20px;
+
+    background-color: #E2AD06;
+    color: black;
+
+    font-size: 20px;
+}
+
+#submit{
+    font-size: 20px;
+}
+
+.cadastro .content1 .box1, .content1 .box2{
+    z-index: 24;
+
+}
+
+.cadastro .content2 .box3, .content2 .box4{
+    z-index: -1;
+}
+
+
+.login .content2 .box3, .content2 .box4{
+    z-index: 12;
+}
+
+.login .content1 .box1, .content1 .box2{
+    z-index: -1;
+}
+
+.cadastro .content2 .box4{
+    z-index: -12;
+}
+
+.cadastro .content1 .box2{
+    z-index: 36;
+}
+
+.cadastro .content1::before{
+    left: 0%;
+    animation: slidein 3s;
+    z-index: 24;
+}
+
+/*responsividade*/
+
+
+
+

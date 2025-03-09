@@ -1,0 +1,373 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face{
+    font-family: 'Cloud' ;
+    src: url('fonts/CloudSoft-Bold\ 700.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Cloud-light' ;
+    src: url('fonts/CloudSoft-Light\ 300.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Arista-normal' ;
+    src: url('fonts/Arista-Pro-Bold-trial.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Arista-light' ;
+    src: url('fonts/Arista-Pro-ExtraLight-trial.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #fff6e9;
+    overflow-x: hidden;
+}
+
+.anuncio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 30vh;
+
+    border-bottom: 2px solid #E2AD06;
+
+    background-color: white;
+    color: black;
+
+    font-size: 25px;
+    font-family: "Cloud", sans-serif;
+
+}
+
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+    width: 200px;
+    height: auto;
+
+    cursor: pointer;
+}
+
+.assinaturabox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+
+    padding: 100px 0px 100px 0px;
+}
+
+.assinatura{
+    display: flex;
+    flex-direction: row;
+
+    width: 95%;
+
+    height: 400px;
+    padding: 10px;
+
+    background-color: white;
+    border: 2px solid #E2AD06;
+    border-radius: 20px;
+
+    color: black;
+}
+
+.titulo-plano{
+    font-family: "Arista-normal", sans-serif;
+    font-size: 35px;
+    color: #E2AD06;
+}
+
+.descricao{
+    font-family: "Cloud", sans-serif;
+    font-size: 18px;
+    margin: 10px 0px 20px 0px;
+}
+
+.preco{
+    font-family: "Cloud", sans-serif;
+    font-size: 40px;
+
+    margin: 10px 0px 20px 0px;
+    overflow: hidden;
+}
+
+.precobox{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    margin-top: 20px;
+
+}
+.beneficio{
+    font-family: "Cloud", sans-serif;
+    padding-left: 20px;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+.box1{
+    display: flex;
+
+    flex-direction: column;
+
+    width: 33%;
+    padding: 20px;
+
+    font-size: 25px;
+
+}
+
+.box2, .box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    padding: 20px;
+}
+
+.mensalbox, .anualbox{
+    border: 2px solid #E2AD06;
+    border-radius: 20px;
+
+    width: 80%;
+    height: 80%;
+    padding: 20px; 
+}
+
+.mensalbox:hover, .anualbox:hover{
+    background-color: #fff6e9;
+}
+
+.escolhas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    width: 100%;
+}
+
+.aviso{
+    font-family: "Cloud", sans-serif;
+    font-size: 16px;
+
+    margin-bottom: 10px;
+}
+
+a{
+    color:#0d9cc7;
+}
+
+#btnplanom, #btnplanoa{
+    width: 100%;
+    height: 50px;
+
+    border: 1px solid white;
+    border-radius: 20px;
+
+    margin-top: 10px;
+
+    font-family: "Cloud", sans-serif;
+    font-size: 16px;
+
+    background: linear-gradient(45deg,#F7BB49,#E2AD06);
+    cursor: pointer;
+}
+
+#btnplanom:hover, #btnplanoa:hover{
+    transform: scale(1.03);
+
+}
+
+/*rodapé*/
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+
+    width: 100%;
+    height: 160px;
+
+    background-color: #5E3811;
+}
+
+.sobrebox{
+    display: flex;
+    width: auto;
+}
+
+.titulo {
+    font-size: 32px;
+    margin-bottom: 5px;
+
+    font-family: "Arista-normal", sans-serif;
+    cursor: pointer;
+}
+
+.titulo:hover {
+    transform: scale(1.05);
+}
+
+.sobre, .contato {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+
+    width: 33.3%;
+
+    color: white;
+
+    font-family: "Roboto", sans-serif;
+    font-size: clamp(20px, 1vw, 50px);
+}
+
+.contatobox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: auto;
+}
+
+.contato {
+    align-items: end;
+
+    width: auto;
+
+    font-size: 15px;
+}
+
+.contato p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.iconbox {
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+}
+
+.iconimg {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+}
+
+#instagram, #email-link, #evf{
+    text-decoration: none;
+    color: white;
+}
+
+.subfooter{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
+
+    background-color: #5E3811;
+
+    font-family: "Cloud-light", sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.boxsobre{
+    text-align: justify;
+    width: 70%;
+
+    margin: 50px;
+}
+
+.locationsobre{
+    width: 100%;
+    height: 1px;
+
+    background-color: #5E3811;
+}
+
+/*responsividade*/
+@media (max-width: 895px) {
+    .anuncio{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo{
+        position: relative;
+    }
+
+    .logobox{
+        display: flex;
+        justify-content: left;
+        width: 100%;
+
+    }
+
+    p{
+        margin: 0px 0px 10px 10px;
+
+    }
+
+    .assinatura{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .box1{
+        width: 100%;
+    }
+
+    .escolhas{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .mensalbox, .anualbox
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .escolhas{
+        justify-content: center;
+    
+    }
+
+    .box2, .box3{
+        width: 90%;
+    }
+
+    
+
+}

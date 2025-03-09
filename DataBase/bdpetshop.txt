@@ -1,0 +1,169 @@
+create database petshop;
+use petshop;
+
+create table cliente (
+    cod_clt int auto_increment primary key not null,
+	cpf_clt int not null,
+    nome_clt varchar(100) not null,
+    end_clt varchar(255) not null,
+    tel_clt int not null,
+    email_clt varchar(255) null,
+    fk_cod_pet integer
+);
+
+create table pet (
+	cod_pet int auto_increment primary key not null,
+    nome_pet varchar(100) null,
+    espc_pet varchar(150) not null, 
+    rc_pet varchar(200) not null, 
+    prt_pet varchar(20) not null,
+    idade_pet int null,
+    temp_pet varchar(30) null,
+    obs_pet tinytext null,
+    dnc_pet varchar(255) null,
+    fk_cod_clt integer
+    /* Falta cpf */
+);
+
+create table agendamento (
+	id_agd int auto_increment primary key not null,
+    svp_agd varchar(255) not null,
+    data_agd date not null,
+    hora_agd time not null,
+    obs_agd tinytext,
+    idm_agd tinytext,
+    fk_cod_clt integer,
+    fk_cod_pet integer,
+    fk_id_fcn integer
+    /* vai precisaar de valor? e falta cpf, cod_pet e o registro do medico */
+);
+
+create table funcionario (
+    id_fcn int auto_increment primary key not null, 
+	cpf_fcn int not null, 
+    nome_fcn varchar(255) not null,
+    crg_fcn varchar(35) not null,
+    end_fcn varchar(255) null,
+    tel_fcn int null,
+    slr_fcn int not null,
+    fk_cod_cnt integer
+    /* Falta contrato e tirei idade */
+);
+
+create table contrato (
+	cod_cnt int auto_increment primary key not null,
+    inc_cnt date not null,
+    fim_cnt date not null,
+    fk_id_fcn integer
+    /* Falta cpf do funcionario */
+);
+
+create table fornecedores (
+    id_for int auto_increment primary key not null,
+	cnpj_for int not null,
+    nome_for varchar(255) not null,
+    end_for varchar(255) not null,
+    tel_for int not null,
+    email_for varchar(255) null,
+    dcp_for tinytext
+    /* Falta cod produto */
+);
+
+create table produto (
+	cod_pdt int auto_increment primary key not null,
+    nome_pdt varchar(100),
+    vld_pdt date not null,
+    val_pdt int not null,
+    dcr_pdt tinytext not null,
+    fk_id_for integer
+    /* Falta cnpj */
+);
+
+create table compra (
+	cod_cmp int auto_increment primary key not null,
+    tlt_cmp int not null,
+    data_cmp date not null,
+    hora_cmp time not null,
+    fk_cod_clt integer,
+    fk_cod_pdt integer
+    /* Falta cpf_clt, cod_fcn e cod_pdt */
+);
+
+create table estoque(
+    qtd_pdt int not null,
+    fk_cod_pdt integer
+    
+);
+
+
+/*alter_tables*/
+
+
+/*cliente*/
+alter table cliente
+add constraint fk_cod_pet
+foreign key (fk_cod_pet)
+references pet (cod_pet);
+
+
+/*pet*/
+alter table pet
+add constraint fk_cod_clt
+foreign key (fk_cod_clt)
+references cliente (cod_clt);
+
+/*agendamento*/
+alter table agendamento
+add constraint fk_cod_clt
+foreign key (fk_cod_clt)
+references cliente (cod_clt);
+
+alter table agendamento
+add constraint fk_cod_pet
+foreign key (fk_cod_pet)
+references pet (cod_pet);
+
+alter table agendamento
+add constraint fk_id_fcn
+foreign key (fk_id_fcn)
+references funcionario (id_fcn);
+
+
+/*funcionario*/
+alter table funcionario
+add constraint fk_cod_cnt
+foreign key (fk_cod_cnt)
+references contrato (cod_cnt);
+
+
+/*contrato*/
+alter table contrato
+add constraint fk_id_fcn
+foreign key (fk_id_fcn)
+references funcionario (id_fcn);
+
+
+/*produto*/
+alter table produto
+add constraint fk_id_for
+foreign key (fk_id_for)
+references fornecedores (id_for);
+
+
+/*compra*/
+alter table compra
+add constraint fk_cod_clt
+foreign key (fk_cod_clt)
+references cliente (cod_clt);
+
+alter table compra
+add constraint fk_cod_pdt
+foreign key (fk_cod_pdt)
+references produto (cod_pdt);
+
+
+/*estoque*/
+alter table estoque
+add constraint fk_cod_pdt
+foreign key (fk_cod_pdt)
+references produto (cod_pdt);

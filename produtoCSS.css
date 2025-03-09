@@ -1,0 +1,385 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+@font-face{
+    font-family: 'Cloud' ;
+    src: url('fonts/CloudSoft-Bold\ 700.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Cloud-light' ;
+    src: url('fonts/CloudSoft-Light\ 300.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Arista-normal' ;
+    src: url('fonts/Arista-Pro-Bold-trial.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Arista-light' ;
+    src: url('fonts/Arista-Pro-ExtraLight-trial.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    background-color: #eeebe7;
+}
+
+header {
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    height: 100px;
+
+    border-bottom: 2px solid #F7BB49;
+}
+
+.logobox {
+    display: flex;
+    justify-content: center;
+
+    width: 33%;
+    height: auto;
+
+}
+
+.logo {
+    width: 130px;
+    height: auto;
+
+    cursor: pointer;
+}
+
+.btnperfil{
+    background: none;
+    border: none;
+    width: auto;
+}
+
+.perfil{
+    width: 80px;
+    height: auto;
+
+    cursor: pointer;
+}
+
+.perfil:hover{
+    transform: scale(1.10);
+}
+
+.acesso {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    width: 33%;
+}
+
+.btnperfil, .btnagendamento, .btnclube {
+    background: none;
+    border: none;
+
+    margin: 0px 10px 0px 10px;
+}
+
+.imgperfil, .imgagendamento,.imgclube {
+    width: clamp(35px, 5vw, 50px);
+    height: auto;
+    cursor: pointer;
+
+}
+
+.imgperfil{
+    width: clamp(60px, 5vw, 80px);
+}
+
+.imgperfil:hover, .imgagendamento:hover,.imgclube:hover {
+    transform: scale(1.10);
+}
+
+.contentbox{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    height: 100%;
+    
+    padding: 20px;
+    margin: 80px 0px 80px 0px;
+
+    border-radius: 60px;
+
+    background-color: white;
+}
+
+.content-inside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 20px;
+
+    border: 3px solid #E2AD06;
+    border-radius: 50px;
+    background: none;
+}
+
+.box1{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.produtoimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 500px;
+    height: auto;
+
+    background: none;
+}
+
+
+.produtoimg img{
+    width: 50%;
+    height: auto;
+    background-color: white;
+}
+
+.box2{
+    flex-direction: column;
+}
+
+.nomeproduto, .descproduto, .valorproduto, .btnbox{
+    width: 100%;
+    height: 35%;
+    margin: 20px 0px 60px 0px;
+}
+
+.nomeproduto{
+    display: flex;
+    align-items: center;
+
+    font-family: "Arista-normal", sans-serif;
+    font-size: 40px;
+
+    color: #5E3811;
+}
+
+.descproduto{
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+}
+
+.valorbox{
+    display: flex;
+    flex-direction: row;
+    height: 15%;
+    width: 100%;
+}
+
+.valorproduto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: auto;
+    
+}
+
+.valorproduto{
+    color: #5E3811;
+
+    font-family: "Cloud", sans-serif;
+    font-size: 60px;
+}
+
+.btnbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btncompra{
+    width: 200px;
+    height: 80px;
+    padding: 10px;
+
+    border: none;
+    border-radius: 20px;
+
+    font-family: "Arista-normal", sans-serif;
+    font-size: 40px;
+
+    background-color: #5E3811;
+    color: white;
+
+    cursor: pointer;
+}
+
+.btncompra:hover{
+    transform: scale(1.03);
+}
+
+/*rodapé*/
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+
+    width: 100%;
+    height: 160px;
+
+    background-color: #5E3811;
+}
+
+.sobrebox{
+    display: flex;
+    width: auto;
+}
+
+.titulo {
+    font-family: "Arista-normal", sans-serif;
+    font-size: 32px;
+    margin-bottom: 5px;
+
+    cursor: pointer;
+}
+
+.titulo:hover {
+    transform: scale(1.05);
+}
+
+.sobre, .contato {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+
+    width: 33.3%;
+
+    color: white;
+
+    font-family: "Roboto", sans-serif;
+    font-size: clamp(20px, 1vw, 50px);
+}
+
+.contatobox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: auto;
+}
+
+.contato {
+    align-items: end;
+
+    width: auto;
+    font-size: 15px;
+}
+
+.contato p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.iconbox {
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+}
+
+.iconimg {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+}
+
+#instagram, #email-link, #evf{
+    text-decoration: none;
+    color: white;
+}
+
+.subfooter{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
+
+    background-color: #5E3811;
+
+    font-family: "Cloud-light", sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.boxsobre{
+    text-align: justify;
+    width: 70%;
+
+    margin: 50px;
+}
+
+.locationsobre{
+    width: 100%;
+    height: 1px;
+
+    background-color: #5E3811;
+}
+
+@media (max-width: 1350px) {
+     /*footer*/
+     footer{
+        flex-direction: column;
+        height: auto;
+        align-items: flex-end;
+    }
+
+    .sobre, .politicas, .ajuda, .contato{
+        width: 33.3%;
+        padding: 20px 0px 20px 0px;   
+    }
+    .contato{
+        padding-right: 10px;
+    }
+
+
+
+}

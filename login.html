@@ -1,0 +1,179 @@
+   <!DOCTYPE html>
+<html>
+   
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<link rel="icon" href="https://i.postimg.cc/wT3nfxgv/Logo.png" type="image/x-icon">
+
+<head>
+
+    <link rel="stylesheet" href="login.css">
+    <title> Login Paws Palace </title>
+
+</head>
+
+<body class="login">
+    
+<!--conteúdo do cadastro de usuário-->
+<div class="content1">
+
+    <!--quadrado esquerdo do cadastro-->
+    <div class="box1">
+        <img src="https://i.postimg.cc/wT3nfxgv/Logo.png" alt="logo" class="logo" onclick="location.reload();" id="btnlogo"> 
+
+
+        <div class="txt1"> Olá, Seja Bem-Vindo! </div>
+        <div class="txt2"> Se junte a nós e garanta seus benefícios </div>
+        <div class="txt3box">
+         <hr> <div class="txt3">  Ou </div> </hr> 
+        </div>
+
+        <div class="btns">
+            <button id="fazerlogin" class="btnfazerlogin"> Fazer Login </button>
+         </div>
+   
+    </div>
+
+
+    <!--quadrado direito do cadastro-->
+    <div class="box2">
+        <div class="formbox">
+            <form method="post" action="cadastro.php">
+
+                <div class="contentbox">
+                        <label for="nome"> Nome Completo </label>
+                    <div class="inputbox">
+                        <input type="text" name="nome" id="nome" class="input" >
+                    </div>
+                </div>
+
+
+                <div class="contentbox">
+                <label for="cpf"> CPF </label>
+                    <div class="inputbox">
+                        <input type="text" name="cpf" id="cpf" class="input" maxlength="14" autocomplete="off" 
+                        oninput="this.value = this.value.replace(/[^0-9.-]/g, '')">
+
+                    </div>
+                </div>
+
+
+                <div class="contentbox">
+                        <label for="email"> Email </label>
+                    <div class="inputbox">
+                        <input type="email" name="email" id="email" class="input" >
+                    </div>
+                </div>
+
+
+                <div class="contentbox">
+                        <label for="senha"> Senha </label>
+                    <div class="senhabox">
+                        <input type="password" name="senha" id="senha1"  class="input" >
+                        <div class="btnhide"> <i class="bi bi-eye" id="btnsenha1" onclick="mostrarsenha1()"></i> </div>
+                    </div>
+                </div>
+
+
+                <div class="contentbox">
+                        <label for="csenha"> Confirmar senha </label>
+                    <div class="senhabox">
+                        <input type="password" name="csenha" id="csenha" class="input" >
+                        <div class="btnhide"> <i class="bi bi-eye" id="btncsenha" onclick="mostrarcsenha()"></i> </div>
+                    </div>
+                </div>
+
+
+                <div class="contentbox">
+                        <label for="tel"> Telefone </label>
+                    <div class="inputbox">
+                        <input type="text" name="tel" id="telefone" class="input" maxlength="13"
+                        oninput="this.value = this.value.replace(/[^0-9. -]/g,'')">
+                    </div>
+                </div>
+
+
+                <div class="btns">
+
+                    <input type="submit" name="submit" id="submit" value="Cadastrar-se" class="btncadastrar">
+
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--conteúdo do login de usuário-->
+<div class="content2">
+
+    <!--quadrado esquerdo do login-->
+    <div class="box3">
+        <div class="formbox">
+            <form method="post" action="login.php">
+
+                <div class="contentbox">
+                        <label for="l_email"> Email </label>
+                    <div class="inputbox">
+                        <input type="email" name="l_email" id="email" class="input">
+                    </div>
+                </div>
+
+
+                <div class="contentbox">
+                        <label for="senha"> Senha </label>
+                        <div class="senhabox">
+                            <input type="password" name="l_senha" id="senha2" class="input" required>
+                            <div class="btnhide"> <i class="bi bi-eye" id="btnsenha2" onclick="mostrarsenha2()"></i> </div>
+                        </div>
+                </div>
+
+
+                <div class="btns">
+
+                    <input type="submit" name="login" id="login" value="Login" class=" btnfazerlogin2">
+
+                   
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!--quadrado direito do login-->
+    <div class="box4">
+        <img src="https://i.postimg.cc/wT3nfxgv/Logo.png" alt="logo2" class="logo2" id="btnlogo2" onclick="location.reload();"> 
+
+
+        <div class="txt1"> Bem-Vindo de volta!</div>
+        <div class="txt2"> Se mantenha conectado para receber ofertas exclusivas! </div>
+        <div class="txt3box">
+            <hr><div class="txt3">  Ou </hr></div> 
+        </div>
+
+        <div class="btns">
+            <button id="fazercadastro" class="btncadastrar2"> Cadastrar-se </button>
+        </div>
+   
+    </div>
+
+</div>
+
+<script src="login.js"></script>
+
+</body>
+</html>

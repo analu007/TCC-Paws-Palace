@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+<link rel="icon" href="https://i.postimg.cc/wT3nfxgv/Logo.png" type="image/x-icon">
+
+<head>
+
+    <link rel="stylesheet" href="clubeCSS.css">
+    <title> Clube Paws </title>
+
+</head>
+
+<body>
+
+    <!--título da página-->
+    <div class="anuncio">
+        <div class="logobox">
+            <img src="https://i.postimg.cc/wT3nfxgv/Logo.png" alt="logo" class="logo" onclick="window.open('index.php', '_self')">
+        </div>
+
+            <p>Faça sua assinatura e garanta benefícios únicos!</p>
+
+    </div>
+
+    <!--conteúdo principal-->
+    <div class="assinaturabox">
+
+        <!--descrição da assinatura-->
+        <div class="assinatura">
+            <div class="box1">
+                <div class="titulo"><b>Paws Premium </b></div>
+
+                <div class="descricao">Aproveite todos os benefícios do plano Paws Premium com descontos exclusivos.
+                </div>
+                <div class="beneficio">
+                    <ul>
+                        <li>Descontos de até 40%.</li>
+                        <li>Frete grátis.</li>
+                        <li>Incluso 1 banho ao mês.</li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!--escolha da duração da assinatura-->
+            <div class="escolhas">
+                <div class="box2">
+
+                    <!--assinatura mensal-->
+                    <div class="mensalbox">
+                        <div class="titulo-plano"><b><u>Mensal</u></b></div>
+                        <div class="precobox">
+                            <div class="preco">R$ 49,90</div>
+                        </div>
+
+                        <div class="avisobox">
+                            <div class="aviso">* Valor sujeito a reajustes.</div>
+                            <div class="aviso">* A assinatura continuará ativa até que seja cancelada.</div>
+                            <div class="aviso">Para mais informações, contate <a id="email-clube-link"
+                                href="https://mail.google.com/mail/?view=cm&fs=1&to=tccpawspalace@gmail.com&su=Info%20Clube%20Paws%20Palace&body="
+                                target="_blank">tccpawspalace@gmail.com</a>
+                            </div>
+
+                            <button id="btnplanom"> <b>Selecionar</b> </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--assinatura anual-->
+                <div class="box3">
+                    <div class="anualbox">
+                        <div class="titulo-plano"><b><u>Anual</u></b></div>
+                        <div class="precobox">
+                            <div class="preco">R$ 500,00</div>
+                        </div>
+
+                        <div class="avisobox">
+                            <div class="aviso">* Valor sujeito a reajustes.</div>
+                            <div class="aviso">* A assinatura continuará ativa até que seja cancelada.</div>
+                            <div class="aviso">Para mais informações, contate <a id="email-clube-link"
+                                href="https://mail.google.com/mail/?view=cm&fs=1&to=tccpawspalace@gmail.com&su=Info%20Clube%20Paws%20Palace&body="
+                                target="_blank">tccpawspalace@gmail.com</a>
+                            </div>
+
+                            <button id="btnplanoa"> <b>Selecionar</b> </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <script src="clubeJS.js"></script>
+
+</body>
+
+
+<!--rodapé-->
+<footer>
+
+    <div class="sobre">
+
+        <b class="titulo" onclick="sobre()" id="sobre"> Sobre nós </b>
+        Quem somos?
+    </div>
+
+    <div class="contato">
+
+        <p><a href="https://etecvilaformosa.cps.sp.gov.br/" target="_blank" id="evf">ETEC de Vila Formosa</a>
+        </p>
+
+        <br>
+
+        <div class="contatobox">
+            <img src="img/instaicon.png" class="iconimg" alt="instagram logo">
+            <p><a href="https://www.instagram.com/paws.palace_?igsh=c3JwNmYzaGNuOWVu" id="instagram" target="_blank"
+                    rel="noopener noreferrer">@paws.palace_</a></p>
+        </div>
+
+        <br>
+
+        <div class="contatobox">
+            <img src="img/emailicon.png" class="iconimg" alt="email logo">
+            <p><a id="email-link"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=tccpawspalace@gmail.com&su=Ajuda%20Paws%20Palace&body="
+                    target="_blank">tccpawspalace@gmail.com</a></p>
+        </div>
+
+    </div>
+
+
+</footer>
+
+<div class="subfooter" id="subfooter">
+
+    <div class="boxsobre">
+        No Paws Palace, nosso objetivo é oferecer uma experiência prática e personalizada para você e seu pet.
+        Criamos uma plataforma que combina conveniência e eficiência, permitindo agendamentos online, acesso a
+        produtos de
+        alta qualidade e gestão simplificada de serviços. Inspirados por nossa paixão pelos animais e comprometidos
+        com a
+        excelência, buscamos ser mais do que um pet shop, mas um parceiro confiável na jornada de cuidados com seu
+        companheiro. Priorizamos o bem-estar dos pets e a satisfação dos tutores, com uma equipe dedicada e soluções
+        inovadoras para tornar seu dia a dia mais fácil e especial.
+
+        <br><br>
+
+        Precisa de ajuda? Contate-nos <a id="email-link"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=tccpawspalace@gmail.com&su=Ajuda%20Paws%20Palace&body="
+            target="_blank">tccpawspalace@gmail.com</a>
+    </div>
+
+    <div class="locationsobre" id="locationsobre"></div>
+
+</div>
+
+</html>

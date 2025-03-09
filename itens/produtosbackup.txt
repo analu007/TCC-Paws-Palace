@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<link rel="icon" href="https://i.postimg.cc/wT3nfxgv/Logo.png" type="image/x-icon">
+
+<head>
+
+    <link rel="stylesheet" href="produtoCSS.css">
+    <title> Produto Paws Palace </title>
+
+</head>
+
+
+
+<body>
+        <header>
+    
+                <img src="https://i.postimg.cc/6pmnt94V/Logo.png" alt="logo" class="logo" id="btnlogo" onclick="btnlogo();">
+        
+    
+            <div class="pesquisa" id="pesquisa">
+                <input type="search" placeholder="Buscando algo?" class="input">
+                <button class="btnlupa"> <img src="https://i.postimg.cc/B6xKTHYN/lupa.png" class="lupa" alt="lupa"></button>
+    
+            </div>
+    
+    
+                <div class="itensbox">
+                     <img src="https://i.postimg.cc/gjm6Nj1p/perfil.png" alt="perfil" class="perfil" onclick="window.open('login.html', '_self')">
+                </div>
+            
+        </header>
+    
+        <div class="subheader">
+    
+                <div class="subitens1">
+        
+                    <button class="racao" onclick="window.open('index.html', '_self')"> Ração </button>
+                    |
+                    <button class="brinquedos"  onclick="window.open('index.html', '_self')"> Brinquedos </button>
+                    |
+                    <button class="acessorios"  onclick="window.open('index.html', '_self')"> Acessórios </button>
+                    |
+                    <button class="outros"  onclick="window.open('index.html', '_self')"> Outros </button>
+                </div>
+        
+                <div class="subitens2">
+                    <img src="https://i.postimg.cc/tC9hzvH6/coroa.png" width="40px" height="40px" alt="coroa" class="coroa">
+                    <button class="clube" id="btnclube" onclick="btnclube()"> Clube Paws </button>
+                    |
+                    <button class="agendamento" id="btnagendamento" onclick="btnagendamento()"> Agendamento </button>
+        
+                </div>
+        
+            </div>
+
+
+    <div class="content">
+        <div class="content-inside">
+
+
+            <div class="box1">
+                <div class="produtoimg">
+                    <img src="" alt="produto" id="imgpdt">
+                </div>
+            </div>
+
+            <div class="box2" id="box2">
+                <div class="nomeproduto" id="nomepdt"><b>Nome do produto</b></div>
+                <div class="descproduto" id="descpdt">Descrição do produto </div>
+                <div class="valorbox">
+                    <div class="valorproduto" id="valorpdt"><b>Valor do produto</b></div>
+
+                    <div class="freteproduto">Frete: <p class="frete"> não incluso</p>
+                    </div>
+                </div>
+                <div class="btnbox">
+                    <button class="btnadcproduto"><b>Finaliza Compra</b></button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <script src="produtoJS.js"></script>
+
+</body>
+
+  <!--rodapé-->
+  <footer>
+        <div class="footerbox">
+
+            <div class="sobre">
+
+                <b class="titulo"> Sobre nós </b>
+                Quem somos?
+            </div>
+
+            <div class="politicas">
+
+                <b class="titulo"> Nossas Políticas </b>
+                Políticas
+            </div>
+
+            <div class="ajuda">
+
+                <b class="titulo"> Ajuda </b>
+                Fale conosco
+            </div>
+        </div>
+
+        <div class="contato">
+
+            <p>ETEC de Vila Formosa</p>
+            <br>
+            <div class="contatobox">
+                <img src="img/instaicon.png" class="iconimg" alt="instagram logo">
+                <p>@paws.palace_</p>
+            </div>
+
+            <br>
+
+            <div class="contatobox">
+                <img src="img/emailicon.png" class="iconimg" alt="email logo">
+                <p>tccpawspalace@gmail.com</p>
+            </div>
+
+
+        </div>
+
+    </footer>
+
+</html>
